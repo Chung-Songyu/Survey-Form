@@ -1,0 +1,100 @@
+body {
+  font-family: 'Libre Caslon Text', serif;
+  background-image: linear-gradient(180deg, rgba(255, 65, 65, 0.8), rgba(165, 165, 240, 0.6)), url('https://images.unsplash.com/photo-1528164344705-47542687000d');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#title {
+  font-size: 2.5em;
+  font-weight: 600;
+  margin: 40px 0px 10px 0px;
+  padding: 0px 15px 0px 15px;
+  text-align: center;
+}
+
+#description {
+  font-size: 1em;
+  margin: 10px 0px 35px 0px;
+  padding: 0px 15px 0px 15px;
+  text-align: center;
+}
+
+#survey-form {
+  background: rgba(255, 120, 30, 0.65);
+  margin: auto;
+  max-width: 650px;
+  border-radius: 10px;
+  padding: 25px 25px 25px 25px;
+  font-weight: bold;
+  border-color: black;
+  border-width: 4px;
+  border-style: solid;
+}
+
+.headings {
+  color: rgba(0, 10, 160, 1);
+  text-decoration: underline;
+  font-size: 1.15em;
+}
+
+.field {
+  margin: 0.5em 0px 1.5em 0px;
+  padding: 5px 0px 5px 10px;
+  min-width: 96%;
+  border-radius: 4px;
+}
+
+#start-date-label, #end-date-label {
+  margin: 0px 0px 0px 0px;
+}
+
+#number, #number1 {
+  min-width: 16%;
+  margin: 0.5em 10px 0.1em 0px;
+}
+
+.heading-explanation {
+  margin: 0.3em 0px 0px 0px;
+  padding: 0px 0px 5px 0px;
+  font-size: 0.88em;
+  font-style: italic;
+}
+
+.radio {
+  margin: 0.5em 8px 0px 0px;
+}
+
+.last-choice {
+  margin: 0.5em 8px 1.5em 0px;
+}
+
+.trip-preference {
+  max-width: 5%;
+  margin: 0.5em 10px 0.1em 0px;
+}
+
+#dropdown {
+  min-width: 98%;
+  border-radius: 4px;
+}
+
+#comments {
+  margin: 0.5em 0px 1.5em 0px;
+  padding: 5px 5px 5px 10px;
+}
+
+#submit {
+  margin: 10px auto 15px auto;
+  padding: 10px 0px 10px 0px;
+  min-width: 98%;
+  border-radius: 4px;
+  background-color: #5AAA50;
+  color: white;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.4);
+}

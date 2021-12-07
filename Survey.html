@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Japan Trip Planner (Survey Form)</title>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Survey.css"/>
+</head>
+
+<body>
+  <h1 id="title">Japan Trip Planner</h1>
+  <p id="description"><i>Tell us more about you and your ideal Japan Trip!</i></p>
+
+  <form id="survey-form">
+    <label for="name-label" id="name-label" class="headings">Name</label>
+    <br>
+    <label for="name">
+    <input id="name" class="field" type="text" placeholder="Enter your name" required>
+    </label>
+
+    <label for="email-label" id="email-label" class="headings">Email</label>
+    <br>
+    <label for="email">
+    <input id="email" class="field" type="email" placeholder="Enter your email" required>
+    </label>
+
+    <p id="start-date-label" class="headings">Trip start date</p>
+    <label for="start-date">
+    <input id="start-date" class="field" type="date" required>
+    </label>
+
+    <p id="end-date-label" class="headings">Trip end date</p>
+    <label for="end-date">
+    <input id="end-date" class="field" type="date" required>
+    </label>
+
+    <label for="number-label" id="number-label" class="headings">Group composition</label>
+    <br>
+    <label for="number">
+    <input id="number" class="field" type="number" placeholder="No. of adults" min="0" max="50" required>Adults
+    </label>
+    <br>
+    <label for="number1">
+    <input id="number1" class="field" type="number" placeholder="No. of children (below 18 y/o)" min="0" max="50" required>Children (below 18 y/o)
+    </label>
+    <br><br>
+
+    <label for="budget-label" id="budget-label" class="headings">How much is your budget? (in SGD)</label>
+    <p id="budget-explanation" class="heading-explanation">- Includes: All transport / accommodation / food / attractions.
+    <br>- Excludes: Insurance / shopping.</p>
+    <label for="budget">
+    <input id="budget" class="field" type="number" min="500" max="50000" placeholder="Total budget amount (in SGD)" required>
+    </label>
+
+    <label for="experience-label" id="experience-label" class="headings">Have you been to Japan before?</label>
+    <br>
+    <label for="experience-yes">
+    <input id="experience-yes" class="radio" value="Yes" type="radio" name="experience">Yes
+    </label>
+    <br>
+    <label for="experience-no">
+    <input id="experience-no" class="last-choice" value="No" type="radio" name="experience">No
+    </label>
+    <br>
+
+    <label for="visit-cities-label" id="visit-cities-label" class="headings">Which cities would you like to visit? (Check all that apply)</label>
+     <p id="visit-cities-explanation" class="heading-explanation">- If you selected "Others", pls provide more details in the "additional comments" area at the bottom of the page.</p>
+    <label for="visit-tokyo">
+    <input id="visit-tokyo" class="radio" value="Tokyo" type="checkbox" name="visit-cities">Tokyo
+    </label>
+    <br>
+    <label for="visit-kyoto">
+    <input id="visit-kyoto" class="radio" value="Kyoto" type="checkbox" name="visit-cities">Kyoto
+    </label>
+    <br>
+    <label for="visit-osaka">
+    <input id="visit-osaka" class="radio" value="Osaka" type="checkbox" name="visit-cities">Osaka
+    </label>
+    <br>
+    <label for="visit-nara">
+    <input id="visit-nara" class="radio" value="Nara" type="checkbox" name="visit-cities">Nara
+    </label>
+    <br>
+    <label for="visit-hiroshima">
+    <input id="visit-hiroshima" class="radio" value="Hiroshima" type="checkbox" name="visit-cities">Hiroshima
+    </label>
+    <br>
+    <label for="visit-himeji">
+    <input id="visit-himeji" class="radio" value="Himeji" type="checkbox" name="visit-cities">Himeji
+    </label>
+    <br>
+    <label for="visit-sapporo">
+    <input id="visit-sapporo" class="radio" value="Sapporo" type="checkbox" name="visit-cities">Sapporo
+    </label>
+    <br>
+    <label for="visit-others">
+    <input id="visit-others" class="last-choice" value="Others" type="checkbox" name="visit-cities">Others
+    </label>
+    <br>
+
+    <label for="trip-preference-label" id="trip-preference-label" class="headings">Trip preferences</label>
+    <p id="trip-preference-explanation" class="heading-explanation">- Rank the following from 1 to 9, 1 being most important and 9 being least important.
+    <br>- Seasonal attractions/festivals: e.g. cherry blossom/autumn leaves viewing, Christmas light-up.
+    <br>- If you selected "Others", pls provide more details in the "additional comments" area at the bottom of the page.</p>
+    <label for="trip-preference-transport">
+    <input id="trip-preference-transport" class="trip-preference" type="number" min="1" max="9" name="trip-preference">Comfortable transportation
+    </label>
+    <br>
+    <label for="trip-preference-accommodation">
+    <input id="trip-preference-accommodation" class="trip-preference" type="number" min="1" max="9" name="trip-preference">Nice accommodation
+    </label>
+    <br>
+    <label for="trip-preference-food">
+    <input id="trip-preference-food" class="trip-preference" type="number" min="1" max="9" name="trip-preference">Good food
+    </label>
+    <br>
+    <label for="trip-preference-cultural">
+    <input id="trip-preference-cultural" class="trip-preference" type="number" min="1" max="9" name="trip-preference">Cultural experience
+    </label>
+    <br>
+    <label for="trip-preference-historical">
+    <input id="trip-preference-historical" class="trip-preference" type="number" min="1" max="9" name="trip-preference">Historical experience
+    </label>
+    <br>
+    <label for="trip-preference-nature">
+    <input id="trip-preference-nature" class="trip-preference" type="number" min="1" max="9" name="trip-preference">Nature sightseeing
+    </label>
+    <br>
+    <label for="trip-preference-attractions">
+    <input id="trip-preference-attractions" class="trip-preference" type="number" min="1" max="9" name="trip-preference">Tourist attractions
+    </label>
+    <br>
+    <label for="trip-preference-seasonal">
+    <input id="trip-preference-seasonal" class="trip-preference" type="number" min="1" max="9" name="trip-preference">Seasonal attractions/festivals
+    </label>
+    <br>
+    <label for="trip-preference-others">
+    <input id="trip-preference-others" class="trip-preference" type="number" min="1" max="9" name="trip-preference">Others
+    </label>
+    <br><br>
+
+    <label for="daily-attractions-label" id="daily-attractions-label" class="headings">How many places of interest do you expect to visit daily?</label>
+    <select id="dropdown" class="field" name="daily-attractions">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="infinite">As many as possible!</option>
+    </select>
+    <br>
+
+    <label for="comments-label" id="comments-label" class="headings">Any additional comments?</label>
+    <label for="comments">
+    <textarea id="comments" class="field" maxlength="2000" rows="10" cols="10" placeholder="Enter your comment here."></textarea>
+    </label>
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
